@@ -4,11 +4,11 @@
 # https://github.com/masonr/yet-another-bench-script #
 # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
 
-Tue Jul  9 15:37:28 UTC 2024
+Tue Jul  9 19:28:15 CEST 2024
 
 Basic System Information:
 ---------------------------------
-Uptime     : 0 days, 0 hours, 9 minutes
+Uptime     : 0 days, 0 hours, 7 minutes
 Processor  : AMD EPYC-Rome Processor
 CPU cores  : 4 @ 2300.000 MHz
 AES-NI     : ✔ Enabled
@@ -16,8 +16,8 @@ VM-x/AMD-V : ✔ Enabled
 RAM        : 7.8 GiB
 Swap       : 8.0 GiB
 Disk       : 52.1 GiB
-Distro     : Ubuntu 22.04.1 LTS
-Kernel     : 5.15.0-46-generic
+Distro     : AlmaLinux 9.4 (Seafoam Ocelot)
+Kernel     : 5.14.0-284.11.1.el9_2.x86_64
 VM Type    : KVM
 IPv4/IPv6  : ✔ Online / ❌ Offline
 
@@ -33,35 +33,34 @@ fio Disk Speed Tests (Mixed R/W 50/50) (Partition /dev/vda1):
 ---------------------------------
 Block Size | 4k            (IOPS) | 64k           (IOPS)
   ------   | ---            ----  | ----           ----
-Read       | 139.89 MB/s  (34.9k) | 2.86 GB/s    (44.7k)
-Write      | 140.26 MB/s  (35.0k) | 2.87 GB/s    (44.9k)
-Total      | 280.16 MB/s  (70.0k) | 5.73 GB/s    (89.6k)
+Read       | 132.06 MB/s  (33.0k) | 2.47 GB/s    (38.7k)
+Write      | 132.41 MB/s  (33.1k) | 2.49 GB/s    (38.9k)
+Total      | 264.47 MB/s  (66.1k) | 4.96 GB/s    (77.6k)
            |                      |
 Block Size | 512k          (IOPS) | 1m            (IOPS)
   ------   | ---            ----  | ----           ----
-Read       | 9.12 GB/s    (17.8k) | 12.92 GB/s   (12.6k)
-Write      | 9.60 GB/s    (18.7k) | 13.78 GB/s   (13.4k)
-Total      | 18.72 GB/s   (36.5k) | 26.71 GB/s   (26.0k)
+Read       | 9.54 GB/s    (18.6k) | 12.60 GB/s   (12.3k)
+Write      | 10.05 GB/s   (19.6k) | 13.44 GB/s   (13.1k)
+Total      | 19.59 GB/s   (38.2k) | 26.05 GB/s   (25.4k)
 
 iperf3 Network Speed Tests (IPv4):
 ---------------------------------
 Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping
 -----           | -----                     | ----            | ----            | ----
-Clouvider       | London, UK (10G)          | 774 Mbits/sec   | 1.81 Gbits/sec  | 80.3 ms
-Eranium         | Amsterdam, NL (100G)      | 741 Mbits/sec   | 2.11 Gbits/sec  | 91.6 ms
-Uztelecom       | Tashkent, UZ (10G)        | 354 Mbits/sec   | 464 Mbits/sec   | 189 ms
-Leaseweb        | Singapore, SG (10G)       | busy            | 541 Kbits/sec   | --
-Clouvider       | Los Angeles, CA, US (10G) | 727 Mbits/sec   | 1.83 Gbits/sec  | 87.1 ms
-Leaseweb        | NYC, NY, US (10G)         | 1.66 Gbits/sec  | 6.89 Gbits/sec  | 10.5 ms
-Edgoo           | Sao Paulo, BR (1G)        | 515 Mbits/sec   | 1.33 Gbits/sec  | 133 ms
+Clouvider       | London, UK (10G)          | 440 Mbits/sec   | 1.55 Gbits/sec  | 79.9 ms
+Eranium         | Amsterdam, NL (100G)      | 1.08 Gbits/sec  | 2.27 Gbits/sec  | 91.8 ms
+Uztelecom       | Tashkent, UZ (10G)        | 355 Mbits/sec   | 601 Mbits/sec   | 189 ms
+Leaseweb        | Singapore, SG (10G)       | 59.6 Mbits/sec  | 13.2 Mbits/sec  | 229 ms
+Clouvider       | Los Angeles, CA, US (10G) | 729 Mbits/sec   | 1.57 Gbits/sec  | 87.3 ms
+Leaseweb        | NYC, NY, US (10G)         | 1.91 Gbits/sec  | 7.04 Gbits/sec  | 10.4 ms
+Edgoo           | Sao Paulo, BR (1G)        | 587 Mbits/sec   | 997 Mbits/sec   | 133 ms
 
-Running GB6 benchmark test... *cue elevator music*
 Geekbench 6 Benchmark Test:
 ---------------------------------
 Test            | Value
                 |
-Single Core     | 1195
-Multi Core      | 3806
-Full Test       | https://browser.geekbench.com/v6/cpu/6845828
+Single Core     | 1206
+Multi Core      | 3983
+Full Test       | https://browser.geekbench.com/v6/cpu/6847077
 
-YABS completed in 12 min 21 sec
+YABS completed in 10 min 41 sec
